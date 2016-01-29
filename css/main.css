@@ -16,6 +16,33 @@ html {
   box-sizing: inherit;
 }
 
-.bear:hover #left-ear {
+#bear:hover #left-ear {
   transform: translateY(-10px);
+}
+
+#bear:hover #right-ear {
+  transform: translateY(-10px);
+}
+
+#left-ear {
+  transition: all .5s linear;
+  transform: translateY(0);
+  transform-origin: center;
+}
+
+#right-ear {
+  transition: all .5s linear;
+  transform: translateY(0);
+  transform-origin: center;
+}
+
+#left-eye {
+  animation: left-right .5s linear infinite;
+  transform-origin: center;
+}
+
+#right-eye {
+  animation: translate .5s linear infinite;
+  transform-origin: center;
+
 }
