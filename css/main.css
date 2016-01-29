@@ -37,12 +37,22 @@ html {
 }
 
 #left-eye {
-  animation: left-right .5s linear infinite;
+  animation: left-right .5s linear infinite alternate;
   transform-origin: center;
 }
 
 #right-eye {
-  animation: translate .5s linear infinite;
+  animation: left-right .5s linear infinite alternate;
   transform-origin: center;
 
+}
+
+@keyframes left-right {
+  from {
+    transform: translateX(-5px);
+  }
+
+  to {
+    transform: translateX(15px);
+  }
 }
