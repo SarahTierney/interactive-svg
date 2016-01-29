@@ -48,6 +48,7 @@ html {
 }
 
 @keyframes left-right {
+
   from {
     transform: translateX(-5px);
   }
